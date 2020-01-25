@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Deprecated Immunix Perl modules from AppArmor suite
 Summary(pl.UTF-8):	Przestarzałe moduły Perla Immunix ze zbioru oprogramowania AppArmor
 Name:		perl-Immunix
