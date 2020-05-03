@@ -1,21 +1,23 @@
 Summary:	Deprecated Immunix Perl modules from AppArmor suite
 Summary(pl.UTF-8):	Przestarzałe moduły Perla Immunix ze zbioru oprogramowania AppArmor
 Name:		perl-Immunix
-Version:	2.9.0
+Version:	2.13.4
 Release:	1
 Epoch:		1
 License:	GPL v2
 Group:		Development/Languages/Perl
-Source0:	http://launchpad.net/apparmor/2.9/%{version}/+download/apparmor-%{version}.tar.gz
-# Source0-md5:	daaeb859452f793abfdafd33f88d3e90
+Source0:	http://launchpad.net/apparmor/2.13/%{version}/+download/apparmor-%{version}.tar.gz
+# Source0-md5:	a50b793a3362551f07733be3df9c328f
 Source1:	Ycp.pm
-URL:		http://apparmor.wiki.kernel.org/
+URL:		http://wiki.apparmor.net/
 BuildRequires:	rpm-perlprov
+BuildRequires:	rpmbuild(macros) >= 1.745
 Requires:	perl-DBD-SQLite >= 1.08
+Requires:	perl-LibAppArmor = %{epoch}:%{version}-%{release}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'perl(ycp)'
+%define		_noautoreq_perl	ycp
 
 %description
 Deprecated Immunix Perl modules from AppArmor suite.
