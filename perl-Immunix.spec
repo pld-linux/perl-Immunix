@@ -2,7 +2,7 @@ Summary:	Deprecated Immunix Perl modules from AppArmor suite
 Summary(pl.UTF-8):	Przestarzałe moduły Perla Immunix ze zbioru oprogramowania AppArmor
 Name:		perl-Immunix
 Version:	2.13.4
-Release:	2
+Release:	3
 Epoch:		1
 License:	GPL v2
 Group:		Development/Languages/Perl
